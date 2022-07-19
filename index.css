@@ -1,0 +1,199 @@
+body {
+  width: 100%;
+  display: block;
+  align-items: center;
+  height: auto;
+  background-color: #dce6e7;
+}
+.flex_practice {
+  display: flex;
+  justify-content: center;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 300px 10px;
+  border: 2px solid teal;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 30px;
+  color: rgb(185, 64, 8);
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  box-shadow: 6px 6px rgb(130, 152, 160);
+  text-shadow: 1px 1px gray;
+  position: relative;
+}
+
+h1:hover,
+.number:hover {
+  background-image: linear-gradient(90deg, #d9afd9 0%, #97d9e1 100%);
+  font-size: 40px;
+  color: rgb(7, 75, 35);
+  position: relative;
+  animation-duration: 1s;
+  animation-name: example3;
+}
+
+.n1:hover {
+  animation-name: rotating2;
+  animation-duration: 1s;
+}
+
+.n1:hover,
+.n3:hover,
+.n5:hover,
+.n7:hover,
+.n9:hover {
+  animation-name: rotating1;
+  animation-duration: 2s;
+}
+
+.n2:hover,
+.n4:hover,
+.n6:hover,
+.n8:hover,
+.n10:hover {
+  animation-name: rotating2;
+  animation-duration: 2s;
+}
+/* 
+@keyframes example1 {
+  0% {
+    right: 0px;
+    bottom: 0px;
+  }
+  25% {
+    right: 200px;
+    bottom: 0px;
+  }
+  50% {
+    right: 200px;
+    bottom: 200px;
+  }
+  75% {
+    right: 0px;
+    bottom: 200px;
+  }
+  100% {
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+@keyframes example2 {
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  25% {
+    left: 0px;
+    top: 200px;
+  }
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes example3 {
+  0% {
+    bottom: 0px;
+  }
+  /* 25% {
+    bottom: 0px;
+  }*/
+  50% {
+    bottom: 100px;
+  }
+  /*75% {
+    bottom: 100px;
+  } */
+  100% {
+    bottom: 0px;
+  }
+} */
+
+.n1 {
+  order: 1;
+}
+.n3 {
+  order: 3;
+}
+.n2 {
+  order: 2;
+}
+.n4 {
+  order: 4;
+}
+.n5 {
+  order: 5;
+}
+.n6 {
+  order: 6;
+}
+.n7 {
+  order: 7;
+}
+.n8 {
+  order: 8;
+}
+.n9 {
+  order: 9;
+}
+.n10 {
+  order: 10;
+}
+
+.header {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
+  color: white;
+  border: 2px solid teal;
+  border-radius: 4px;
+  padding: 20px;
+  margin: auto;
+  height: 60px;
+  justify-content: center;
+  font-size: 50pt;
+  display: flex;
+  align-content: center;
+  width: 600px;
+}
+
+@keyframes rotating1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating1 {
+  animation: rotating1 4s linear infinite;
+}
+
+
+@keyframes rotating2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotating2 {
+  animation: rotating2 4s linear infinite;
+}
